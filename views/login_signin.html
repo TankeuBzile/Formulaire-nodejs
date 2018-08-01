@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %} 
+	<div class="row">
+		<div class="col s12  offset-l4 l4 div-form-login" style="" id="div-form-login">
+			<form class="" style="color: #fff;" method="post" action="/login" id="form-login">
+			<input class="input-style" type="text" name="name" placeholder="Identifiant" autocomplete="false">
+			<input class="input-style" type="password" name="password" placeholder="Mot de passe">
+			<button class="col s12 l12 btn btn-submit" name="submit" id="submit">Connexion</button>
+			<!-- <input type="button" value="Connexion" name="submit" class="col s12 l12 btn btn-submit" id="submit"> -->
+			<p class="col s12" style="margin-top: 20px;padding-left: 0;"><a href="">Mot de passe oublié ? <a href="" id="link-signin">Créer un compte</a></a></p>
+		</form>
+		</div>
+
+		<!--  -->
+		<div class="col s12  offset-l4 l4 div-form-signin" style="display: none;" id="div-form-signin">
+			<form class="" style="color: #fff;" method="post" action="/login" id="form-signin">
+			<input class="input-style" type="text" name="pseudo" placeholder="Pseudo" autocomplete="false">
+			<input class="input-style" type="text" name="name" placeholder="nom" autocomplete="false">
+			<input class="input-style" type="password" name="password" placeholder="Mot de passe">
+			<input class="input-style" type="password" name="password_repeat" placeholder="Repeter le mot de passe">
+			<button class="col s12 l12 btn btn-submit" name="submit" id="submit-signin">Créer un compte</button>
+			<!-- <input type="button" value="Connexion" name="submit" class="col s12 l12 btn btn-submit" id="submit"> -->
+			<p class="col s12" style="margin-top: 20px;padding-left: 0;"><a href="">Mot de passe oublié ? <a href="" id="link-login">Se connecter</a></a></p>
+		</form>
+		</div>
+		<!--  -->
+	</div>
+{% endblock %}
